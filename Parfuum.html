@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Christina Door</title>
+    
+    <style>
+
+        body{
+
+            margin: 0;
+
+        }
+
+        .group1{
+
+
+        }
+
+        .backgroundimage{
+
+            background-image: url('https://fimgs.net/himg/o.83568.jpg');
+            background-size: cover;
+            background-attachment: scroll;
+            filter: blur(0px);
+            width: 100%;
+            height: 100vh;
+            border-width: 10px;
+            background-position: center;
+    
+            
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            text-align: center;
+            color: #FFF9FB;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+            
+        }
+
+        .overlay p1{
+
+            font-size: 500px; 
+
+        }
+
+        .overlay p2{
+
+            font-size: 200px;
+        
+        }
+
+        .head1{
+            
+        }
+
+        .logo{
+
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 10px;
+            padding-left: 20px;
+
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+        .navbar a {
+            color: aliceblue;
+            text-decoration: none;
+            margin-left: 125px;
+            font-size: 22px;
+            padding-top: 33px;
+        }
+
+        .navbar a:hover{
+
+            color: #F08700;
+        }
+
+        .main{
+
+        }
+        
+        .creator{
+
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            justify-content: flex-end;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            font-size: 20px;
+        }
+
+        .company{
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .company a {
+            color: aliceblue;
+            text-decoration: none;
+            margin-left: 100px;
+            font-size: 20px;
+            padding-top: 33px;
+        }
+
+        .company a:hover{
+            color: #F08700;
+        }
+
+        .group2{
+            padding: 2%;
+        }
+
+        .b1{
+            border-radius: 50px;
+            display: flex;
+            width: 65%;
+            height: 450px;
+            float: left;
+            margin-bottom: 5%;
+            font-family: "Montserrat", sans-serif;
+            
+            background-size: cover;
+            background-position: center; 
+            background-color: #000807;
+
+            flex-direction: column;
+            
+
+        }
+
+        .textmain{
+        
+            color: #F5F1ED;
+            text-align: right;
+            font-size: 85px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-top: 5%;
+            padding-right: 5%;
+            
+        }
+
+        .text2{
+            color: #F5F1ED;
+            font-size: 39px;
+            text-align: right;
+            font-style: oblique;
+            padding-top: 2%;
+            padding-right: 5%;
+        }
+
+        .b2 {
+            display: flex;
+            width: 30%;
+            height: 1113px;
+            float: right;
+            background: #d45113;
+            background: -webkit-linear-gradient(left, #d45113, #f9a03f);
+            background:    -moz-linear-gradient(left, #d45113, #f9a03f);
+            background:     -ms-linear-gradient(left, #d45113, #f9a03f);
+            background:      -o-linear-gradient(left, #d45113, #f9a03f);
+            background:         linear-gradient(to right, #d45113, #f9a03f);
+            border-radius: 50px;
+    
+
+        }
+
+        .des{
+            font-size: 40px;
+            padding-top: 15%;
+            padding-left: 10%;
+            font-weight: bold;
+            font-family: Tahoma, sans-serif;
+            width: 50%;
+            text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        .b3 {
+            display: flex;
+            width: 30%;
+            height: 1113px;
+            float: left;
+        }
+
+        .jd{
+            font-size: 70px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 900;
+            display: block;
+            color: #ECE8EF;
+            text-shadow: -15px 10px 1px rgba(0, 0, 0, 0.5);
+            padding-top: 10%;
+            padding-left: 7%;   
+            letter-spacing: 10px;
+            line-height: 100px;  
+        }
+
+        .b4 {
+            border-radius: 50px;
+            display: flex;
+            width: 30%;
+            height: 550px;
+            margin: 0 auto; /*wtf*/
+            background-image: url("https://parfumdrops.com/wp-content/uploads/2020/08/sauvage_parfum_100ml-4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .b5 {
+            border-radius: 50px;
+            display: flex;
+            width: 65%;
+            height: 450px;
+            float: right;
+            margin-top: 5%;
+            margin-bottom: 2%;
+
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3236105.jpg&f=1&nofb=1&ipt=1bcb060c902012cb6562c89f4552283a471c3b6606ec2450dbdcb51d75557e2e&ipo=images");
+        }
+
+        .phrase{
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 900;
+            display: block;
+            color: #ECE8EF;
+            text-shadow: 6px 6px 1px rgba(0, 0, 0, 1);
+            padding-top: 4%;
+            padding-left: 5%;   
+            width: 40%; 
+            letter-spacing: 2px;
+            line-height: 80px;      
+
+        }
+
+        .footer {            
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 450px;
+            color: #ECE8EF;
+            background-color: #0c0c0c;
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+            padding-top: 4%;
+        }
+
+        .ab{
+            padding-left: 10%;
+            line-height: 35px;
+            width: 33%;   
+        }
+
+        .com{
+            width: 35%;
+        }
+
+        .social{
+            padding-right: 14%;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .lnk{
+            text-decoration: none;
+        }
+
+        .lnk a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .lnk a:hover{
+            color: #F08700;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="group1">
+
+        <div class="backgroundimage"></div>
+
+            <div class="head1">
+
+                <div class="logo">
+
+                    <img src="img.png">
+
+                </div>
+
+                <div class="navbar">
+                    <a href="#motto">Motto</a>
+                    <a href="#vision">Vision</a>
+                    <a href="#model">Model</a>
+                    <a href="#quote">Campaign</a>
+                </div>
+
+            </div>
+
+            <div class="overlay">
+                <p1>{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p1>
+            </div>
+
+            <div class="overlay">
+
+                <p2>Christina Door</p2>
+
+            </div>
+
+            <div class="foot1">
+
+                <div class="creator">
+                    <p>Barely Work by Mijimena Meinu</p>
+                </div>
+
+                <div class="company">
+                    <a href="#comp">Company Ideals</a>
+                    <a href="#me">Contact Info</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="group2">
+    
+        <div class="b1" id="motto">
+            <div class="textmain">Unlock Temptation</div>
+            <div class="text2">Embrace<br>the<br>Unspoken Whispers<br>of Elegance</div>
+        </div>
+    
+        <div class="b2" id="vision">
+            <div class="des">Indulge in an alluring embrace of desire with our new perfume. Captivate the senses with its daring fusion of exquisite
+            notes, leaving a lingering trace of mystery wherever you go. Ignite intrigue, evoke emotion, and let the essence of
+            seduction guide your journey.</div>
+        </div>
+        
+        <div class="b3" id="model">
+            <div style="background-image: url('https://wallpapercave.com/wp/wp7286356.jpg'); background-attachment: fixed;">
+                <div class="jd">Starring Johnny<br>Depp</div>
+            </div>
+        </div>
+        
+        <div class="b4">
+        </div>
+
+        <div class="b5" id="quote">
+            <div class="phrase">Subtle Whispers Elegance Evoked Senses Seduced Mystery Unveiled</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="ab" id="comp">
+            <div>About Us</div>
+            <br><br>
+            <div>Embracing laziness and creativity, <br>I thrive on ingenious solutions with<br> a touch of laid-back brilliance.<br>
+            Unapologetically me.</div>
+        </div>
+
+        <div class="com" id="me">
+            <div>Contact Us</div>
+            <br><br>
+            <div>Email: bitch@example.com</div>
+            <br>
+            <div>Phone: +696969696</div>
+            <br>
+            <div>Address: 969 Street, City</div>
+        </div>
+
+        <div class="social">
+            <div>Don't Follow Me</div>
+            <br><br>
+            <div class="lnk">
+                <a href="#">Facecock</a>
+                <br><br>
+                <a href="#">Twatter</a>
+                <br><br>
+                <a href="#">Instagrim</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
